@@ -52,7 +52,7 @@
 
                 <li class="nav-item">
                     <a
-                        class="nav-link active border-start border-success border-3 text-success pl-calc-3"
+                        class="nav-link active border-success border-3 pl-calc-3 "
                         aria-current="page"
                         href="index.html"
                         ><span
@@ -76,9 +76,9 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        class="nav-link active border-success border-3 ps-4"
+                        class="nav-link active border-success border-3 pl-calc-3 border-start text-success"
                         aria-current="page"
-                        href="admin.html    "
+                        href="admin.html"
                         ><span
                             class="material-symbols-outlined align-bottom me-3"
                         >
@@ -490,6 +490,26 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="w-100 d-flex justify-content-end">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item">
+                            <a class="page-link text-success" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link text-success bg-success text-white" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link text-success" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link text-success" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link text-success" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+              
             </main>
         </div>
         <!--edit Modal -->
@@ -563,39 +583,12 @@
                         </button>
                         <hr />
                         <h5 class="modal-title mb-3">Access Level</h5>
-                        <div class="dropdown">
-                            <button
-                                class="btn btn-outline-secondary text-dark w-100 text-start d-flex justify-content-between"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                Admin
-                                <span
-                                    class="material-symbols-outlined text-success align-middle"
-                                    >expand_more</span
-                                >
-                            </button>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">Admin</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Something else here</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
+                        <select class="form-select form-select-lg fs-6" aria-label=".form-select-sm example">
+                            <option selected disabled class="text-secondary ">-Choose access level-</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         <hr />
                         <h5 class="modal-title mb-3">Custom Access</h5>
                         <div class="form-check mb-3">
@@ -632,7 +625,6 @@
                             </label>
                         </div>
                         <div class="form-check mb-3">
-                            Setting
                             <input
                                 class="form-check-input me-2 border-3 border-dark"
                                 type="checkbox"
@@ -715,23 +707,23 @@
                             Account
                         </h5>
                         <div class="mb-3">
-                            <label for="name" class="form-label fw-bold"
+                            <label for="addname" class="form-label fw-bold"
                                 >Name</label
                             >
                             <input
                                 type="text"
                                 class="form-control border-dark rounded-0"
-                                id="name"
+                                id="addname"
                             />
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label fw-bold"
+                            <label for="addemail" class="form-label fw-bold"
                                 >email</label
                             >
                             <input
                                 type="email"
                                 class="form-control border-dark rounded-0"
-                                id="email"
+                                id="addemail"
                             />
                         </div>
                         <hr />
@@ -751,39 +743,13 @@
                         </button>
                         <hr />
                         <h5 class="modal-title mb-3">Access Level</h5>
-                        <div class="dropdown">
-                            <button
-                                class="btn btn-outline-secondary w-100 text-start d-flex justify-content-between"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                -Choose access level-
-                                <span
-                                    class="material-symbols-outlined text-success align-middle"
-                                    >expand_more</span
-                                >
-                            </button>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Something else here</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
+                      
+                        <select class="form-select form-select-lg fs-6 text-secondary" aria-label=".form-select-sm example">
+                            <option selected disabled class="text-secondary ">-Choose access level-</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         <hr />
                         <h5 class="modal-title mb-3">Custom Access</h5>
                         <div class="form-check mb-3">
@@ -791,9 +757,9 @@
                                 class="form-check-input me-2 border-3 border-dark"
                                 type="checkbox"
                                 value="Lecture"
-                                id="Lecture"
+                                id="lecture"
                             />
-                            <label class="form-check-label" for="Lecture">
+                            <label class="form-check-label" for="lecture">
                                 Lecture
                             </label>
                         </div>
@@ -802,9 +768,9 @@
                                 class="form-check-input me-2 border-3 border-dark"
                                 type="checkbox"
                                 value="Coupon"
-                                id="Coupon"
+                                id="coupon"
                             />
-                            <label class="form-check-label" for="Coupon">
+                            <label class="form-check-label" for="coupon">
                                 Coupon
                             </label>
                         </div>
@@ -813,21 +779,20 @@
                                 class="form-check-input me-2 border-3 border-dark"
                                 type="checkbox"
                                 value="Message"
-                                id="Message"
+                                id="message"
                             />
-                            <label class="form-check-label" for="Message">
+                            <label class="form-check-label" for="message">
                                 Message
                             </label>
                         </div>
                         <div class="form-check mb-3">
-                            Setting
                             <input
                                 class="form-check-input me-2 border-3 border-dark"
                                 type="checkbox"
                                 value="Setting"
-                                id="Setting"
+                                id="setting"
                             />
-                            <label class="form-check-label" for="Setting">
+                            <label class="form-check-label" for="setting">
                                 Setting
                             </label>
                         </div>
@@ -836,9 +801,9 @@
                                 class="form-check-input me-2 border-3 border-dark"
                                 type="checkbox"
                                 value="Task Menu"
-                                id="Task-Menu"
+                                id="taskMenu"
                             />
-                            <label class="form-check-label" for="Task-Menu">
+                            <label class="form-check-label" for="taskMenu">
                                 Task Menu
                             </label>
                         </div>
@@ -928,6 +893,7 @@
                 </div>
             </div>
         </div>
+    
         
     </body>
 </html>
