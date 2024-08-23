@@ -36,7 +36,7 @@
 
                 <li class="nav-item">
                     <a
-                        class="nav-link active border-start border-success border-3 text-success pl-calc-3"
+                        class="nav-link active border-success border-3 pl-calc-3 <%= page === 'assignment' ? 'border-start text-success' : '' %>"
                         aria-current="page"
                         href="index.html"
                         ><span
@@ -60,9 +60,9 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        class="nav-link active border-success border-3 ps-4"
+                        class="nav-link active border-success border-3 pl-calc-3 <%= page === 'admin' ? 'border-start text-success' : '' %>"
                         aria-current="page"
-                        href="admin.html    "
+                        href="admin.html"
                         ><span
                             class="material-symbols-outlined align-bottom me-3"
                         >
